@@ -27,7 +27,6 @@ const useProjects = () => {
    `)
    return data.allMdx.nodes.map(project => ({
       title: project.frontmatter.title,
-      key: project.frontmatter.index,
       // image: post.frontmatter.image,
       excerpt: project.excerpt,
    }));
