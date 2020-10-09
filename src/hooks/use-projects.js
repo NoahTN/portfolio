@@ -7,7 +7,6 @@ const useProjects = () => {
             nodes {
                frontmatter {
                   title
-                  index
                   # image {
                   #    sharp: childImageSharp {
                   #       fluid (
