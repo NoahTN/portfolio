@@ -1,18 +1,26 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
+import ScrollButton from "../components/scroll-button"
 import SEO from "../components/seo"
-import Profile from "../components/profile"
+import About from "../components/content/about"
+import Contact from "../components/content/contact"
+import Profile from "../components/content/profile"
+import Projects from "../components/content/projects"
+import Skills from "../components/content/skills"
+
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <Profile/>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-  </Layout>
-)
+  <>
+    <Layout>
+      <SEO title="Home"/>
+      <Profile/>
+      <About/>
+      <Skills/>
+      <Projects/>
+      <Contact/>
+    </Layout>
+    <ScrollButton showBelow={250} />
+  </>
+);
 
 export default IndexPage

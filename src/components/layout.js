@@ -26,7 +26,6 @@ const Layout = ({ children }) => {
                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                font-size: 18px;
                line-height: 1.4;
-               
                /* remove margin for main div that gatsby mounts into */
                > div {
                   margin-top: 0;
@@ -66,8 +65,6 @@ const Layout = ({ children }) => {
          <main
             css={css`
                margin: 2rem auto 4rem;
-               max-width: 90vw;
-               width: 550px;
             `}
          >{children}</main>
       </>
