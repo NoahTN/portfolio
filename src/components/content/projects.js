@@ -7,7 +7,7 @@ const Projects = () => {
    const projects = useProjects();
    return <ContentBox title="Projects" id="projects">
       {projects.map(project => (
-         <ProjectBox key={project.index} project={project} />
+         <ProjectBox key={project.title} project={project} />
       ))}
    </ContentBox>
 };
