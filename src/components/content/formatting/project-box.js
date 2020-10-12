@@ -1,15 +1,12 @@
 import React from 'react';
 
 const ProjectBox = ( {project} ) => {
-   const title = project.title;
-   const image = project.image;
-   const skills = project.skills;
-   const description = project.excerpt;
+   const { title, image, skills, excerpt:desc } = project;
 
    return <div>
    <h2>{title}</h2>
    {/* for loop <SkillBox></SkillBox> */}
-   <p>{description}</p>
+   <p>{desc}</p>
    {/* ReadMore - an Object */}
    </div>;
 };

@@ -1,9 +1,9 @@
 import { graphql, useStaticQuery} from 'gatsby';
 
-const useProjects = () => {
+const useAbouts = () => {
    const data = useStaticQuery(graphql`
       query {
-         allMdx(filter: {fileAbsolutePath: {regex: "/projects/"}}) {
+         allMdx(filter: {fileAbsolutePath: {regex: "/abouts/"}}) {
             nodes {
                frontmatter {
                   title
@@ -24,12 +24,12 @@ const useProjects = () => {
          }
       }
    `)
-   return data.allMdx.nodes.map(project => ({
-      title: project.frontmatter.title,
+   return data.allMdx.nodes.map(about => ({
+      title: about.frontmatter.title,
       // image: post.frontmatter.image,
-      excerpt: project.excerpt,
+      excerpt: about.excerpt,
    }));
 };
 
-export default useProjects;
+export default useAbouts;
 
