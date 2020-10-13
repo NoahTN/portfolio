@@ -4,14 +4,13 @@ import { css }from '@emotion/core';
 const Header = () => (
    <header id="top"
       css={css`
-         background: #eee;
-         border-bottom: 1px solid #ddd;
+         background: #222;
          display: flex;
          justify-content: space-between;
          padding: 0.5rem calc((100vw - 725px - 0.5rem) / 2);
 
          a {
-            color: #222;
+            color: #ddd;
             font-size: 1rem;
             font-weight: bold;
             line-height: 1;

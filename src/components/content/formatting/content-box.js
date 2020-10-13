@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 
 const ContentBox = ({ children, title, desc, color, id }) => {
    return <div css={css`
-      background-color: ${color || 'white'};
+      background-color: ${color || '#222'};
       text-align: center;
    `}>
       <div id={id} css={css`

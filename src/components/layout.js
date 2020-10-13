@@ -22,7 +22,8 @@ const Layout = ({ children }) => {
             html,
             body {
                margin: 0;
-               color: #555;
+               color: #ddd;
+               background-color: #222;
                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                font-size: 18px;
                line-height: 1.4;
@@ -37,7 +38,7 @@ const Layout = ({ children }) => {
                h4,
                h5,
                h6 {
-                  color: #222;
+                  color: #ddd;
                   line-height: 1.1;
 
                   + * {
@@ -46,7 +47,7 @@ const Layout = ({ children }) => {
                }
 
                strong {
-                  color: #222;
+                  color: #ddd;
                }
 
                li {
