@@ -2,20 +2,21 @@ import React from 'react';
 import { css } from '@emotion/core';
 
 const ContentBox = ({ children, title, desc, color, id }) => {
-   return <div css={css`
+   return <div id={id} css={css`
       background-color: ${color || '#222'};
       text-align: center;
-   `}>
-      <div id={id} css={css`
-         display: inline-block;
-         margin: 0 5rem 0 5rem;
-         max-width: calc(33%-1rem);
+      margin: 0 5rem 1rem 5rem;
+      max-width: calc(33%-1rem);
+      > div {
+         display: flex;
+         justify-content: center;
+      }
       `}>
-         {title && <h1>{title}</h1>}
-         {desc && <h2>{desc}</h2>}
-         {children}
+         <h1>{title}</h1>
+         <h2>{desc}</h2>
+         <div>{children}</div>
+         
       </div>
-   </div>
 };
 
 export default ContentBox;

@@ -3,7 +3,7 @@ import { graphql, useStaticQuery} from 'gatsby';
 const useAbouts = () => {
    const data = useStaticQuery(graphql`
       query {
-         allMdx(filter: {fileAbsolutePath: {regex: "/abouts/"}}) {
+         allMdx(filter: {fileAbsolutePath: {regex: "/abouts/"}}, sort: {fields: frontmatter___id}) {
             nodes {
                frontmatter {
                   title
@@ -19,7 +19,7 @@ const useAbouts = () => {
                   #    }
                   # }
                }
-               excerpt
+               body
             }
          }
       }
@@ -27,7 +27,7 @@ const useAbouts = () => {
    return data.allMdx.nodes.map(about => ({
       title: about.frontmatter.title,
       // image: post.frontmatter.image,
-      excerpt: about.excerpt,
+      body: about.body,
    }));
 };
 

@@ -3,10 +3,11 @@ import { graphql, useStaticQuery} from 'gatsby';
 const useProjects = () => {
    const data = useStaticQuery(graphql`
       query {
-         allMdx(filter: {fileAbsolutePath: {regex: "/projects/"}}) {
+         allMdx(filter: {fileAbsolutePath: {regex: "/projects/"}}, sort: {fields: frontmatter___id}) {
             nodes {
                frontmatter {
                   title
+                  skills
                   # image {
                   #    sharp: childImageSharp {
                   #       fluid (
@@ -19,7 +20,7 @@ const useProjects = () => {
                   #    }
                   # }
                }
-               excerpt
+               body
             }
          }
       }
@@ -27,7 +28,7 @@ const useProjects = () => {
    return data.allMdx.nodes.map(project => ({
       title: project.frontmatter.title,
       // image: post.frontmatter.image,
-      excerpt: project.excerpt,
+      body: project.body,
    }));
 };
 

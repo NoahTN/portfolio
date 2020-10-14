@@ -1,8 +1,9 @@
 import React from 'react';
 import { css } from '@emotion/core';
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 const AboutBox = ( {about} ) => {
-   const { title, excerpt: desc} = about;
+   const { title, body} = about;
 
    return <div css={css`
       background-color: #fff;
@@ -13,7 +14,7 @@ const AboutBox = ( {about} ) => {
       }
    `}>
       <h2>{title}</h2>
-      <p>{desc}</p>
+      <MDXRenderer>{body}</MDXRenderer>
    </div>
 };
 

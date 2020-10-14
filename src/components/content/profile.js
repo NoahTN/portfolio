@@ -1,20 +1,19 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import ContentBox from './formatting/content-box';
 
 const Profile = () => (
-   <ContentBox id="profile">
-      <div css={css`
-         outline: 1px solid black;
-      `}>
-         <h1 css={css`
+      <div id ="profile" css={css`
+         margin: 0 0 1rem 0;
+         text-align: center;
+
+         h1 {
             color: white;
             background-color: darkgreen;
-         `}
-         >Noah Tolentino Nguyen</h1>
+         }
+      `}>
+         <h1>Noah Tolentino Nguyen</h1>
          <h2>Full-Stack Developer</h2>
       </div>
-   </ContentBox>
 );
 
 export default Profile;

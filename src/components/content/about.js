@@ -11,7 +11,7 @@ const About = () => {
 
    return <div id="about" css={css`
       div {
-         margin-top: 0;
+         margin: 0 0 1rem 0;
          text-align: center;
          height: 8rem;
          align-self: stretch;
