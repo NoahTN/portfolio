@@ -5,10 +5,10 @@ const ContentBox = ({ children, title, desc, color, id }) => {
    return <div id={id} css={css`
       background-color: ${color || '#222'};
       text-align: center;
-      margin: 0 5rem 1rem 5rem;
-      max-width: calc(33%-1rem);
+      margin: 0 5rem 1rem;
       > div {
-         display: flex;
+         display:flex;
+         flex-wrap: wrap;
          justify-content: center;
       }
       `}>

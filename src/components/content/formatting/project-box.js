@@ -10,8 +10,8 @@ const ProjectBox = ( {project} ) => {
       background-color: #aaa;
       color: #eee;
       width: 600px;
-      height: 350px;
-      margin: 0 2rem 0 2rem;
+      height: 250px;
+      margin: 2rem auto;
       h2 {
          color: #eee;
       }

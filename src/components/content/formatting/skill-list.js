@@ -5,6 +5,9 @@ import SkillBox from './skill-box';
 const SkillList = ( {skills} ) => {
    return <div css={css`
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
    `}>
       {skills.map(name => (
          <SkillBox key={name}>{name}</SkillBox>
