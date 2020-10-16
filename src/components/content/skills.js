@@ -1,10 +1,13 @@
 import React from 'react';
 import ContentBox from './formatting/content-box';
+import SkillList from './formatting/skill-list';
 
-const Skills = () => (
-   <ContentBox title="Skills" id="skills">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium risus velit, a tempus nulla fermentum eu. Nulla facilisi. Aliquam aliquam lectus ac lorem porttitor accumsan. Vivamus dictum diam dui, sit amet condimentum ipsum tempor vitae. Sed accumsan ullamcorper est, tristique congue dui sollicitudin quis. In dui mi, sollicitudin non massa et, auctor mattis nunc. In tincidunt turpis sed metus pellentesque, eget consectetur ligula tempor. Quisque bibendum tempor arcu, quis varius tortor convallis ut. Mauris sed iaculis purus. Sed ut pharetra eros, pharetra facilisis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed pulvinar leo a sapien fringilla ultricies. Vivamus viverra lacus dui, ut consectetur turpis ullamcorper sed.</p>
+const Skills = () => {
+   const skills = ['HTML', 'CSS', 'JavaScript', 'C++', 'C', 'Java', 'Python'];
+
+   return <ContentBox title="Skills" id="skills">
+      <SkillList skills={skills}/>
    </ContentBox>
-);
+};
 
 export default Skills;
