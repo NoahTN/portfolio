@@ -8,11 +8,16 @@ const Profile = () => (
 
          h1 {
             color: white;
-            background-color: darkgreen;
+            background-color: #21a685;
          }
       `}>
          <h1>Noah Tolentino Nguyen</h1>
          <h2>Full-Stack Developer</h2>
+         <div>
+            {/* icons */}
+            {/* resume link */}
+            {/* picture? */}
+         </div>
       </div>
 );
 

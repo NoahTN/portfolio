@@ -32,12 +32,15 @@ const ScrollButton = ({ showBelow }) => {
                   z-index: 2;
                   position: fixed;
                   bottom: 2vh;
-                  background-color: #DCDCDC;
-                  color: black;
-                  right: 3%;
+                  background-color: #21a685;
+                  color: #222;
+                  right: 2.5%;
+                  width: 3rem;
+                  height: 1.5rem;
+                  border: 0;
                   :hover {
-                        color: #397BA6;
-                        background-color: #DCDCDC;
+                        color: #ddd;
+                        background-color: #21a685;
                   }
                `}>
                   Go up

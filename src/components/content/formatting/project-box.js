@@ -7,13 +7,18 @@ const ProjectBox = ( {project} ) => {
    const { title, image, skills, body } = project;
    
    return <div css={css`
-      background-color: #aaa;
-      color: #eee;
+      background-color: #333;
+      color: #ddd;
       width: 600px;
       height: 250px;
       margin: 2rem auto;
       h2 {
-         color: #eee;
+         color: #21a685;
+      }
+
+      p {
+         margin: 1rem 1rem;
+         text-align: left;
       }
    `}>
    <h2>{title}</h2>

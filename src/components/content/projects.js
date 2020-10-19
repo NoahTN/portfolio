@@ -6,7 +6,7 @@ import useProjects from '../../hooks/use-projects';
 const Projects = () => {
    const projects = useProjects();
    
-   return <ContentBox title="Projects" id="projects">
+   return <ContentBox title="My Projects" id="projects">
       {projects.map(project => {
          return <ProjectBox key={project.title} project={project} />
       })}

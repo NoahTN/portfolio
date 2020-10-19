@@ -6,14 +6,14 @@ const AboutBox = ( {about} ) => {
    const { title, body} = about;
 
    return <div css={css`
-      background-color: #fff;
-      color: #222;
+      background-color: #333;
+      color: #ddd;
       
-      h2 {
-         color: #222;
+      h1 {
+         color: #ddd;
       }
    `}>
-      <h2>{title}</h2>
+      <h1>{title}</h1>
       <MDXRenderer>{body}</MDXRenderer>
    </div>
 };
