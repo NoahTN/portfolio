@@ -1,9 +1,38 @@
 import React from 'react';
+import { css } from '@emotion/core';
+import { FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import ContentBox from './formatting/content-box';
 
 const Contact = () => (
    <ContentBox title="Contact Me" id="contact">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pretium risus velit, a tempus nulla fermentum eu. Nulla facilisi. Aliquam aliquam lectus ac lorem porttitor accumsan. Vivamus dictum diam dui, sit amet condimentum ipsum tempor vitae. Sed accumsan ullamcorper est, tristique congue dui sollicitudin quis. In dui mi, sollicitudin non massa et, auctor mattis nunc. In tincidunt turpis sed metus pellentesque, eget consectetur ligula tempor. Quisque bibendum tempor arcu, quis varius tortor convallis ut. Mauris sed iaculis purus. Sed ut pharetra eros, pharetra facilisis velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed pulvinar leo a sapien fringilla ultricies. Vivamus viverra lacus dui, ut consectetur turpis ullamcorper sed.</p>
+      <div css={css`
+         p {
+            margin: 1rem;
+         }
+
+         a {
+            color: #ddd;
+            margin: 2rem 0.5rem;
+         }
+
+         #contact-email {
+            margin-top: 5rem;
+            text-decoration: none;
+            font-weight: bold;
+         }
+
+         #contact-links {
+            margin-top: 1.5rem;
+         }
+      `}>
+         
+         <p>If you want to talk, reach out to me at:</p>
+         <a id="contact-email" href="malito:ntolentino-nguyen@gmail.com">ntolentino-nguyen@gmail.com</a>
+         <div id="contact-links">
+            <a href="https://github.com/NoahTN"><FaGithub size={'1.75em'}></FaGithub></a>
+            <a href="https://www.linkedin.com/in/ntolentino-nguyen/"><FaLinkedinIn size={'1.75em'}></FaLinkedinIn></a>
+         </div>
+      </div>
    </ContentBox>
 );
 

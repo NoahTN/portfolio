@@ -15,7 +15,7 @@ const Profile = () => (
          <h2>Full-Stack Developer</h2>
          <div>
             {/* icons */}
-            {/* resume link */}
+            {/* resume link gitignore*/}
             {/* picture? */}
          </div>
       </div>
