@@ -22,7 +22,6 @@ const ProjectBox = ( {project} ) => {
       }
    `}>
    <h2>{title}</h2>
-   {/* for loop <SkillBox></SkillBox> */}
    <MDXRenderer>{body}</MDXRenderer>
    <SkillList skills={skills}/>
    {/* ReadMore - an Object */}

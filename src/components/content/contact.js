@@ -29,8 +29,8 @@ const Contact = () => (
          <p>If you want to talk, reach out to me at:</p>
          <a id="contact-email" href="malito:ntolentino-nguyen@gmail.com">ntolentino-nguyen@gmail.com</a>
          <div id="contact-links">
-            <a href="https://github.com/NoahTN"><FaGithub size={'1.75em'}></FaGithub></a>
-            <a href="https://www.linkedin.com/in/ntolentino-nguyen/"><FaLinkedinIn size={'1.75em'}></FaLinkedinIn></a>
+            <a href="https://github.com/NoahTN"><FaGithub size={'1.75em'}/></a>
+            <a href="https://www.linkedin.com/in/ntolentino-nguyen/"><FaLinkedinIn size={'1.75em'}/></a>
          </div>
       </div>
    </ContentBox>

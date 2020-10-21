@@ -1,5 +1,6 @@
 import React from 'react';
 import { css }from '@emotion/core';
+import { FaGithub, FaLinkedinIn} from 'react-icons/fa'
 
 const Header = () => (
    <header id="top"
@@ -7,7 +8,7 @@ const Header = () => (
          background: #222;
          display: flex;
          justify-content: space-between;
-         padding: 0.5rem calc((100vw - 725px - 0.5rem) / 2);
+         padding: 0.5rem calc((100vw - 900px - 0.5rem) / 2);
 
          a {
             color: #ddd;
@@ -22,16 +23,18 @@ const Header = () => (
                margin-right: 0;
             }
          }
+         
       `}>
       <a href="#top">NoahTN</a>
       <nav 
          css={css`
             margin-top: 0;
          `}>
-         <a href="#about">About</a>
          <a href="#skills">Skills</a>
          <a href="#projects">Projects</a>
          <a href="#contact">Contact</a>
+         <a href="https://github.com/NoahTN"><FaGithub size={'1.4rem'}/></a>
+         <a href="https://www.linkedin.com/in/ntolentino-nguyen/"><FaLinkedinIn size={'1.4rem'}/></a>
       </nav>
    </header>
 );
