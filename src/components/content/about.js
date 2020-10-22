@@ -9,18 +9,31 @@ const About = () => {
    const abouts = useAbouts();
    SwiperCore.use([Autoplay]);
 
-   return <Swiper 
-      slidesPerView={1}
-      loop={true}
-      autoplay={{ delay: 5000 }}
-   >
-      {abouts.map(about => (
-         <SwiperSlide key={about.title}>
-            <h1>{about.title}</h1>
-            <MDXRenderer>{about.body}</MDXRenderer>
-         </SwiperSlide>
-      ))}
-   </Swiper>
+   return <div css={css`
+      width: 500px;
+      display: inline-block;
+      text-align: center;
+      p {
+         text-align: left;
+         padding: 1rem;
+         background: #333;
+         height: 120px;
+      }
+
+   `}>
+      <Swiper 
+         slidesPerView={1}
+         loop={true}
+         autoplay={{ delay: 5000 }}
+      >
+         {abouts.map(about => (
+            <SwiperSlide key={about.title}>
+               <h1>{about.title}</h1>
+               <MDXRenderer>{about.body}</MDXRenderer>
+            </SwiperSlide>
+         ))}
+      </Swiper>
+   </div> 
 };
 
 export default About;

@@ -8,7 +8,7 @@ const Header = () => (
          background: #222;
          display: flex;
          justify-content: space-between;
-         padding: 0.5rem calc((100vw - 900px - 0.5rem) / 2);
+         padding: 0.5rem calc((100vw - 1200px - 0.5rem) / 2);
 
          a {
             color: #ddd;
@@ -30,7 +30,7 @@ const Header = () => (
          css={css`
             margin-top: 0;
          `}>
-         <a href="#skills">Skills</a>
+         <a href="#skills">About</a>
          <a href="#projects">Projects</a>
          <a href="#contact">Contact</a>
          <a href="https://github.com/NoahTN"><FaGithub size={'1.4rem'}/></a>

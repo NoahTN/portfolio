@@ -11,7 +11,8 @@ const ProjectBox = ( {project} ) => {
       color: #ddd;
       width: 600px;
       height: 250px;
-      margin: 2rem auto;
+      margin: 2rem 2rem;
+
       h2 {
          color: #21a685;
       }

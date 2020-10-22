@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
             body {
                margin: 0;
                color: #ddd;
-               background-color: #222;
+               background: #222;
                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                font-size: 18px;
                line-height: 1.4;
@@ -48,6 +48,11 @@ const Layout = ({ children }) => {
 
                li {
                   margin-top: 0.25rem;
+               }
+
+               .main-section {
+                  text-align: center;
+                  margin: 0 5rem 1rem;
                }
             }
          `} />

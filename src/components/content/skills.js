@@ -1,13 +1,16 @@
 import React from 'react';
-import ContentBox from './formatting/content-box';
 import SkillList from './formatting/skill-list';
 
 const Skills = () => {
    const skills = ['HTML', 'CSS', 'JavaScript', 'C++', 'C', 'Java', 'Python'];
 
-   return <ContentBox title=" My Skills" id="skills">
+   return <div id="skills" class="main-section">
+      <h1>My Skills</h1>
+      <h2>Frontend</h2>
+      <h2>Backend</h2>
+      <h2>Tools</h2>
       <SkillList skills={skills}/>
-   </ContentBox>
+   </div>
 };
 
 export default Skills;

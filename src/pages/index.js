@@ -7,15 +7,22 @@ import Contact from "../components/content/contact"
 import Profile from "../components/content/profile"
 import Projects from "../components/content/projects"
 import Skills from "../components/content/skills"
-
+import { css } from '@emotion/core';
 
 const IndexPage = () => (
   <>
     <Layout>
       <SEO title="Home"/>
       <Profile/>
-      {/* <About/> */}
-      <Skills/>
+      <div css={css`
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem;
+      `}>
+        <Skills/>
+        <About/>
+      </div>
       <Projects/>
       <Contact/>
     </Layout>
