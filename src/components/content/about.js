@@ -10,14 +10,14 @@ const About = () => {
    SwiperCore.use([Autoplay]);
 
    return <div css={css`
-      width: 500px;
+      width: 350px;
       display: inline-block;
       text-align: center;
       p {
          text-align: left;
          padding: 1rem;
          background: #333;
-         height: 120px;
+         height: 160px;
       }
 
    `}>

@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from '@emotion/core';
 import SkillBox from './skill-box';
 
-const SkillList = ( {skills} ) => {
+const SkillList = ( {skills, justify} ) => {
    return <div css={css`
       display: flex;
       flex-wrap: wrap;
