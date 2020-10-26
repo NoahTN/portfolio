@@ -9,7 +9,9 @@ const Skills = () => {
 
    return <div id="skills" class="main-section" css={css`
       text-align: center;
-      margin: 0 4rem;
+      flex: 1;
+     
+      
       .column {
          display: inline-block;
          margin: 1rem 1rem;
