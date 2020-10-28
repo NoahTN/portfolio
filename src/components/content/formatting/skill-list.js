@@ -2,11 +2,13 @@ import React from 'react';
 import { css } from '@emotion/core';
 import SkillBox from './skill-box';
 
-const SkillList = ( {skills, justify} ) => {
+const SkillList = ( {skills} ) => {
    return <div css={css`
       display: flex;
+      height: 100px;
       flex-wrap: wrap;
       justify-content: center;
+      align-content: center;
       
    `}>
       {skills.map(name => (

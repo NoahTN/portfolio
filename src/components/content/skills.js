@@ -11,14 +11,25 @@ const Skills = () => {
       text-align: center;
       flex: 1;
      
-      
       .column {
          display: inline-block;
          margin: 1rem 1rem;
          width: 220px;
-         height: 200px;
-         background: #333;
+         height: 160px;
+         background: #383838;
+
+         h2 {
+            background: #333;
+            height: 50px;
+            padding: 0.25rem;
+            border-bottom: 1px solid #222;
+         }
+
+         > div {
+            height: 110px;
+         }
       }
+      
    `}>
       <h1>My Skills</h1>
       <div class="column">
