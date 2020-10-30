@@ -10,16 +10,16 @@ const Skills = () => {
    return <div id="skills" class="main-section" css={css`
       text-align: center;
       flex: 1;
-     
+      
       .column {
          display: inline-block;
          margin: 1rem 1rem;
          width: 220px;
          height: 160px;
-         background: #383838;
-
+         background: #333;
+         
          h2 {
-            background: #333;
+            background: #383838;
             height: 50px;
             padding: 0.25rem;
             border-bottom: 1px solid #222;

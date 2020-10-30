@@ -8,17 +8,18 @@ const useProjects = () => {
                frontmatter {
                   title
                   skills
-                  # image {
-                  #    sharp: childImageSharp {
-                  #       fluid (
-                  #          maxWidth: 100
-                  #          maxHeight: 100
-                  #          duotone: { shadow: "#663399", highlight: "#ddbbff"}
-                  #       ) {
-                  #          ...GatsbyImageSharpFluid_withWebp
-                  #       }
-                  #    }
-                  # }
+                  image {
+                     sharp: childImageSharp {
+                        fluid (
+                           maxWidth: 481
+                           maxHeight: 328
+                           quality: 100
+                         
+                        ) {
+                           ...GatsbyImageSharpFluid_withWebp
+                        }
+                     }
+                  }
                }
                body
             }
@@ -28,7 +29,7 @@ const useProjects = () => {
    return data.allMdx.nodes.map(project => ({
       title: project.frontmatter.title,
       skills: project.frontmatter.skills,
-      // image: post.frontmatter.image,
+      image: project.frontmatter.image,
       body: project.body,
    }));
 };

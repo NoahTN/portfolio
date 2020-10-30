@@ -18,7 +18,7 @@ const IndexPage = () => (
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 2rem;
+        margin: 2rem 10rem; 
         
       `}>
         <Skills/>
