@@ -11,12 +11,9 @@ const useProjects = () => {
                   image {
                      sharp: childImageSharp {
                         fluid (
-                           maxWidth: 481
-                           maxHeight: 328
                            quality: 100
-                         
                         ) {
-                           ...GatsbyImageSharpFluid_withWebp
+                           ...GatsbyImageSharpFluid
                         }
                      }
                   }

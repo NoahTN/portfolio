@@ -12,12 +12,10 @@ const ProjectBox = ( {project} ) => {
       flex-direction: column;
       background-color: #333;
       color: #ddd;
-      width: 600px;
-      height: 300px;
+      max-width: 600px;
       margin: 2rem 2rem;
 
       h2 {
-         
          color: #21a685;
          background: #383838;
          padding: 0.5rem;
@@ -28,35 +26,26 @@ const ProjectBox = ( {project} ) => {
       .project-body {
          display: flex; 
          align-items: center;
-         margin-bottom: rem;
          
          div {
             flex: 1;
-            margin: auto 0.5rem;
+            margin: auto 1rem;
          }
 
          p {
             flex: 2;
-            height: 95px;
             margin: auto 1rem;
             text-align: left;
          }
       }
 
-      > div {
-         height: 125px;
-      }
+     
    `}>
       <h2>{title}</h2>
       <div class="project-body">
          <Image
                fluid={image ? image.sharp.fluid : null}
-               css={css`
-                  * {
-                     margin-top: 0;
-                     
-                  }
-               `}
+               style={{margin: 'auto 0rem auto 1rem'}}
                alt={title}
          />
          <MDXRenderer>{body}</MDXRenderer> 
