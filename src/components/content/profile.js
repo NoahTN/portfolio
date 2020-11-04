@@ -56,7 +56,7 @@ const Profile = () => {
       <div id="resume-block">
          <a href="mailto:ntolentino.nguyen@gmail.com">ntolentino.nguyen@gmail.com</a>
          <div id="resume-button">
-            <a href={resume.publicURL} download>
+            <a href={resume.publicURL}>
                Resume
             </a>
          </div>
