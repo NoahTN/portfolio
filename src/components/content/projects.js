@@ -6,7 +6,7 @@ import { css } from '@emotion/core';
 const Projects = () => {
    const projects = useProjects();
    
-   return <div id="projects" class="main-section" css={css`
+   return <div id="projects" className="main-section" css={css`
       text-align: center;
       
       #project-list {

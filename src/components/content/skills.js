@@ -7,7 +7,7 @@ const Skills = () => {
    const backendList = ['C', 'C++', 'Java', 'Python']
    const toolList = ['AWS', 'Spring Boot', 'Unity', 'Flutter']
 
-   return <div id="skills" class="main-section" css={css`
+   return <div id="skills" className="main-section" css={css`
       text-align: center;
       flex: 1;
       
@@ -32,15 +32,15 @@ const Skills = () => {
       
    `}>
       <h1>My Skills</h1>
-      <div class="column">
+      <div className="column">
          <h2>Frontend</h2>
          <SkillList skills={frontendList}/>
       </div>
-      <div class="column">
+      <div className="column">
          <h2>Backend</h2>
          <SkillList skills={backendList}/>
       </div>
-      <div class="column">
+      <div className="column">
          <h2>Tools</h2>
          <SkillList skills={toolList}/>
       </div>

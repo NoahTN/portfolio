@@ -36,6 +36,13 @@ module.exports = {
          path: 'projects',
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+         name: 'personal',
+         path: 'personal',
+      }
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

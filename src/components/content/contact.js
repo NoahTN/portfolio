@@ -3,7 +3,7 @@ import { css } from '@emotion/core';
 import { FaGithub, FaLinkedin} from 'react-icons/fa'
 
 const Contact = () => (
-   <div id="contact" class="main-section" css={css`
+   <div id="contact" className="main-section" css={css`
       text-align: center;
       p {
          margin: 1rem;

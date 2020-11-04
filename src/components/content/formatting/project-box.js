@@ -42,12 +42,12 @@ const ProjectBox = ( {project} ) => {
      
    `}>
       <h2>{title}</h2>
-      <div class="project-body">
-         <Image
-               fluid={image ? image.sharp.fluid : null}
-               style={{margin: 'auto 0rem auto 1rem'}}
-               alt={title}
-         />
+      <div className="project-body">
+         {image && <Image
+            fluid={image.sharp.fluid}
+            style={{margin: 'auto 0rem auto 1rem'}}
+            alt={title}
+         />}
          <MDXRenderer>{body}</MDXRenderer> 
       </div>
       <SkillList skills={skills}/>
