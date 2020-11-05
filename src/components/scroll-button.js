@@ -33,13 +33,14 @@ const ScrollButton = ({ showBelow }) => {
                   position: fixed;
                   bottom: 2vh;
                   background-color: #21a685;
-                  color: #222;
+                  border: 1px solid #ddd;
+                  color: #ddd;
                   right: 2.5%;
                   width: 3rem;
                   height: 1.5rem;
                   border: 0;
                   :hover {
-                        color: #ddd;
+                        color: #222;
                         background-color: #21a685;
                   }
                `}>
