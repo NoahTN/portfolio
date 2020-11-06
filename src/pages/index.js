@@ -18,7 +18,10 @@ const IndexPage = () => (
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin: 2rem 10rem; 
+        align-items: center;
+        margin: 2rem 0rem; 
+        padding: 0.75rem;
+        background: #21a685;
       `}>
         <Skills/>
         <About/>

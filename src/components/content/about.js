@@ -11,7 +11,7 @@ const About = () => {
 
    return <div css={css`
       width: 609px;
-      flex: 1;
+      margin: auto 4rem;
       text-align: center;
       
       p {
@@ -19,7 +19,7 @@ const About = () => {
          margin: 1rem auto;
          padding: 1rem;
          background: #333;
-         height: 160px;
+         height: 168px;
          width: 609px;
       }
 

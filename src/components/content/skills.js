@@ -7,9 +7,10 @@ const Skills = () => {
    const generalList = ['C', 'C++', 'Java', 'Python']
    const toolList = ['AWS', 'Spring Boot', 'Unity', 'Flutter']
 
-   return <div id="skills" className="main-section" css={css`
+   return <div id="skills" css={css`
       text-align: center;
-      flex: 1;
+      margin: auto 4rem;
+
       #skills-body {
          display: flex;
          flex-wrap: wrap;
@@ -19,7 +20,7 @@ const Skills = () => {
          .column {
             display: flex;
             flex-wrap: wrap;
-            margin: 1rem 1rem;
+            margin: 1rem 0.5rem;
             width: 260px;
             background: #333;
             
