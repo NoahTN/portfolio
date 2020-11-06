@@ -12,7 +12,7 @@ const Header = () => (
 
          a {
             display: inline-block;
-            color: #ddd;
+            color: #f2f2f2;
             font-size: 1rem;
             font-weight: bold;
             line-height: 1;
@@ -34,8 +34,8 @@ const Header = () => (
          <a href="#skills">About</a>
          <a href="#projects">Projects</a>
          <a href="#contact">Contact</a>
-         <a href="https://github.com/NoahTN"><FaGithub size={'1.4rem'}/></a>
-         <a href="https://www.linkedin.com/in/ntolentino-nguyen/"><FaLinkedin size={'1.4rem'}/></a>
+         <a href="https://github.com/NoahTN"><FaGithub size={'1.4rem'} aria-label="Github Link"/></a>
+         <a href="https://www.linkedin.com/in/ntolentino-nguyen/"><FaLinkedin size={'1.4rem'} aria-label="LinkedIn Linked"/></a>
       </nav>
    </header>
 );

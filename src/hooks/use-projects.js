@@ -17,6 +17,7 @@ const useProjects = () => {
                         }
                      }
                   }
+                  link
                }
                body
             }
@@ -27,6 +28,7 @@ const useProjects = () => {
       title: project.frontmatter.title,
       skills: project.frontmatter.skills,
       image: project.frontmatter.image,
+      link: project.frontmatter.link,
       body: project.body,
    }));
 };

@@ -33,8 +33,7 @@ const ScrollButton = ({ showBelow }) => {
                   position: fixed;
                   bottom: 2vh;
                   background-color: #21a685;
-                  border: 1px solid #ddd;
-                  color: #ddd;
+                  border: 1px solid #f2f2f2;
                   right: 2.5%;
                   width: 3rem;
                   height: 1.5rem;

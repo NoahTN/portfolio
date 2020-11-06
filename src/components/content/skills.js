@@ -3,46 +3,60 @@ import SkillList from './formatting/skill-list';
 import{ css } from '@emotion/core';
 
 const Skills = () => {
-   const frontendList = ['HTML', 'CSS', 'JavaScript', 'React', 'Gatsby', 'Dart']
-   const backendList = ['C', 'C++', 'Java', 'Python']
+   const webList = ['HTML', 'CSS', 'JavaScript', 'React', 'Gatsby', 'SQL']
+   const generalList = ['C', 'C++', 'Java', 'Python']
    const toolList = ['AWS', 'Spring Boot', 'Unity', 'Flutter']
 
    return <div id="skills" className="main-section" css={css`
       text-align: center;
       flex: 1;
-      
-      .column {
-         display: inline-block;
-         margin: 1rem 1rem;
-         width: 220px;
-         height: 160px;
-         background: #333;
-         
-         h2 {
-            background: #383838;
-            height: 50px;
-            padding: 0.25rem;
-            border-bottom: 1px solid #222;
-         }
+      #skills-body {
+         display: flex;
+         flex-wrap: wrap;
+         align-items: flex-start;
+         justify-content: center;
 
-         > div {
-            height: 110px;
+         .column {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 1rem 1rem;
+            width: 280px;
+            background: #333;
+            
+            h2 {
+               background: #383838;
+               height: 50px;
+               padding: 0.25rem 1rem;
+               border-bottom: 1px solid #222;
+            }
+
+            > div :last-child{
+               display: flex;
+               align-content: flex-start;
+               justify-content: flex-start;
+               margin: 0.5rem 0 0.5rem 0.75rem; 
+              
+            }
          }
       }
-      
    `}>
       <h1>My Skills</h1>
-      <div className="column">
-         <h2>Frontend</h2>
-         <SkillList skills={frontendList}/>
-      </div>
-      <div className="column">
-         <h2>Backend</h2>
-         <SkillList skills={backendList}/>
-      </div>
-      <div className="column">
-         <h2>Tools</h2>
-         <SkillList skills={toolList}/>
+      <div id="skills-body">
+         <div className="column">
+            <h2>Web</h2>
+            <div className="break"></div>
+            <SkillList skills={webList}/>
+         </div>
+         <div className="column">
+            <h2>General</h2>
+            <div className="break"></div>
+            <SkillList skills={generalList}/>
+         </div>
+         <div className="column">
+            <h2>Tools</h2>
+            <div className="break"></div>
+            <SkillList skills={toolList}/>
+         </div>
       </div>
    </div>
 };

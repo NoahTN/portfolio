@@ -7,7 +7,6 @@ const Profile = () => {
    return <div id="profile" css={css`
       margin: 1rem auto;
       background: #333;
-      color: white;
       width: 400px;
       text-align: center;
       padding: 0.25rem 0 0 0;
@@ -30,7 +29,7 @@ const Profile = () => {
          display: flex;
          
          a {
-            color: #ddd;
+            color: #f2f2f2;
             display:inline-block;
             text-decoration: none;
             font-weight: bold;
@@ -45,7 +44,7 @@ const Profile = () => {
             width: 150px;
             height: 50px;
             border-radius: 10px;
-            color: white;
+            color: #f2f2f2;
             background: #21a685;
          }
       }

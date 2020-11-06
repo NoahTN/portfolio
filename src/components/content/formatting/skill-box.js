@@ -3,7 +3,6 @@ import { css } from '@emotion/core';
 
 const SkillBox = ( {children} ) => {
    return <div css={css`
-      color: #fff;
       background: #21a685;
       font-size: 0.9em;
       padding: 0.25rem 0.5rem;

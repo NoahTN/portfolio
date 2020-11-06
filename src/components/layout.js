@@ -18,13 +18,13 @@ const Layout = ({ children }) => {
             html,
             body {
                margin: 0;
-               color: #ddd;
+               color: #f2f2f2;
                background: #222;
                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                font-size: 18px;
 
                strong {
-                  color: #ddd;
+                  color: #f2f2f2;
                }
 
                li {

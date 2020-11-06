@@ -5,15 +5,19 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import SkillList from './skill-list';
 
 const ProjectBox = ( {project} ) => {
-   const { title, image, skills, body } = project;
+   const { title, image, skills, link, body} = project;
    
    return <div css={css`
       display: flex;
       flex-direction: column;
       background-color: #333;
-      color: #ddd;
       max-width: 600px;
       margin: 2rem 2rem;
+
+      a {
+            text-decoration: none;
+      
+      }
 
       h2 {
          color: #21a685;
@@ -27,27 +31,28 @@ const ProjectBox = ( {project} ) => {
          display: flex; 
          align-items: center;
          
-         div {
+         a {
             flex: 1;
-            margin: auto 1rem;
+            div {
+               margin: auto 1rem;
+            }
          }
-
+         
          p {
             flex: 2;
             margin: auto 1rem;
             text-align: left;
          }
       }
-
      
    `}>
-      <h2>{title}</h2>
+      <a href={link}><h2>{title}</h2></a>
       <div className="project-body">
-         {image && <Image
+         {image && <a href={link}><Image
             fluid={image.sharp.fluid}
             style={{margin: 'auto 0rem auto 1rem'}}
             alt={title}
-         />}
+         /></a>}
          <MDXRenderer>{body}</MDXRenderer> 
       </div>
       <SkillList skills={skills}/>
