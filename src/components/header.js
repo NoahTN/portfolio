@@ -10,6 +10,10 @@ const Header = () => (
          justify-content: space-between;
          padding: 0.5rem calc((100vw - 1200px - 0.5rem) / 2);
 
+         > a :last-of-type {
+            color: #21a685;
+         }
+
          a {
             display: inline-block;
             color: #f2f2f2;

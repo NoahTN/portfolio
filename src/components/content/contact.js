@@ -5,16 +5,24 @@ import { FaGithub, FaLinkedin} from 'react-icons/fa'
 const Contact = () => (
    <div id="contact" className="main-section" css={css`
       text-align: center;
+      background: #21a685;
+      color: #000;
+
+      h1 {
+         color: #f2f2f2;
+      }
+
       p {
-         margin: 1rem;
+         margin: 0.5rem;
       }
 
       a {
-         color: #f2f2f2;
+         color: #222;
          display:inline-block;
       }
 
       #contact-email {
+         color: #f2f2f2;
          margin: 0;
          text-decoration: none;
          font-weight: bold;

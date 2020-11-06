@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
                margin: 0;
                color: #f2f2f2;
                background: #222;
-               font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+               font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
                font-size: 18px;
 
                strong {
@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
 
                .main-section {
                   text-align: center;
-                  margin: 0 5rem 1rem;
+                  margin: 1rem 0 0;
                }
             }
          `} />
@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
          <Header/>
          <main
             css={css`
-               margin: 2rem auto 4rem;
+               margin: 2rem auto 0;
             `}
          >{children}</main>
       </>

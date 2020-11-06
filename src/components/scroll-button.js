@@ -29,19 +29,21 @@ const ScrollButton = ({ showBelow }) => {
        <div>
            {show &&
                <button onClick={handleClick} aria-label="to top" css={css`
-                  z-index: 2;
-                  position: fixed;
-                  bottom: 2vh;
-                  background-color: #21a685;
-                  border: 1px solid #f2f2f2;
-                  right: 2.5%;
-                  width: 3rem;
-                  height: 1.5rem;
-                  border: 0;
-                  :hover {
-                        color: #222;
-                        background-color: #21a685;
-                  }
+                    z-index: 2;
+                    position: fixed;
+                    bottom: 2.5vh;
+                    background-color: #21a685;
+                    border: 1px solid #222;
+                    border-radius: 3px;
+                    font-weight: bold;
+                    right: 2.5vw;
+                    width: 3rem;
+                    height: 1.5rem;
+                    :hover {
+                            color: #222;
+                            cursor: pointer;
+                            background-color: #21a685;
+                    }
                `}>
                   Go up
                </button>
