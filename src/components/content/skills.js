@@ -20,7 +20,7 @@ const Skills = () => {
             display: flex;
             flex-wrap: wrap;
             margin: 1rem 1rem;
-            width: 280px;
+            width: 260px;
             background: #333;
             
             h2 {
