@@ -7,7 +7,7 @@ const Profile = () => {
    return <div id="profile" css={css`
       margin: 1rem auto;
       background: #333;
-      width: 550px;
+      max-width: 550px;
       text-align: center;
       padding: 0.25rem 0 0 0;
       
@@ -27,6 +27,7 @@ const Profile = () => {
          background: #383838;
          padding: 0.5rem 0;
          display: flex;
+         flex-wrap: wrap;
          justify-content: center;
          
          a {
@@ -34,13 +35,13 @@ const Profile = () => {
             display:inline-block;
             text-decoration: none;
             font-weight: bold;
-            margin: auto 2rem auto 0.75rem;
+            margin: auto 1.2rem auto 0.75rem;
          }
 
          #resume-button {
             line-height: 50px;
-            margin: auto 2rem;
-            width: 100px;
+            margin: auto 1.2rem;
+            max-width: 100px;
             height: 50px;
             border-radius: 10px;
             color: #f2f2f2;

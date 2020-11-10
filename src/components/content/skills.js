@@ -9,6 +9,7 @@ const Skills = () => {
 
    return <div id="skills" css={css`
       text-align: center;
+      display: inline-block;
       margin: auto 4rem;
 
       #skills-body {
@@ -21,7 +22,7 @@ const Skills = () => {
             display: flex;
             flex-wrap: wrap;
             margin: 1rem 0.5rem;
-            width: 260px;
+            max-width: 260px;
             background: #333;
             
             h2 {
