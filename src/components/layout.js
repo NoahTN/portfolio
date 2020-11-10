@@ -31,10 +31,14 @@ const Layout = ({ children }) => {
                   margin-top: 0.25rem;
                }
 
-               .main-section {
+               #skills-about {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
                   text-align: center;
-                  margin: 1rem 0 0;
-               }
+                  margin: 2rem 0; 
+                  padding: 0.75rem;
+               }   
             }
          `} />
 
@@ -42,8 +46,17 @@ const Layout = ({ children }) => {
             <html lang="en"/>
             <title>{title}</title>
             <meta name="description" content={description}/>
-            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
-            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+            <link
+               rel="stylesheet"
+               type="text/css"
+               charset="UTF-8"
+               href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+            />
+            <link
+               rel="stylesheet"
+               type="text/css"
+               href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+            />
             <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
             <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
          </Helmet>
@@ -52,6 +65,7 @@ const Layout = ({ children }) => {
          <main
             css={css`
                margin: 2rem auto 0;
+               
             `}
          >{children}</main>
       </>

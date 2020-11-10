@@ -5,7 +5,7 @@ import SkillBox from './skill-box';
 const SkillList = ( {skills} ) => {
    return <div css={css`
       display: flex;
-      height: 100px;
+      min-height: 100px;
       flex-wrap: wrap;
       justify-content: center;
       align-content: center;

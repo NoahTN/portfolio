@@ -5,10 +5,12 @@ import { FaGithub, FaLinkedin} from 'react-icons/fa'
 const Header = () => (
    <header id="top"
       css={css`
-         background: #222;
+         background: #333;
          display: flex;
-         justify-content: space-between;
-         padding: 0.5rem calc((100vw - 1200px - 0.5rem) / 2);
+         justify-content: space-evenly;
+         align-items: flex-end;
+         padding: 0.5rem calc((100vw - 1500px) / 2);
+         border-bottom: 1px solid #222;
 
          > a :last-of-type {
             color: #21a685;

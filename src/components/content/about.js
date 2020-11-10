@@ -1,41 +1,60 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import SwiperCore, { Autoplay } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import Slider from "react-slick";
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import useAbouts from '../../hooks/use-abouts'
 
 const About = () => {
    const abouts = useAbouts();
-   SwiperCore.use([Autoplay]);
+   const settings = {
+      slidesToShow:1,
+      infinite:true,
+      slidesToScroll:1,
+      autoplay:true,
+      autoplaySpeed: 8000,
+      arrows: false,
+   }
 
    return <div css={css`
-      width: 609px;
-      margin: auto 4rem;
       text-align: center;
+      max-width: 650px;
+      min-width: calc((100vw - 650px) / 2);
       
-      p {
-         text-align: left;
-         margin: 1rem auto;
-         padding: 1rem;
-         background: #333;
-         height: 168px;
-         width: 609px;
+      .slick-track {
+         display: flex !important;
+
+         .slick-slide {
+            height: inherit !important;
+
+            .slide {
+            outline: none;
+            
+
+            :active {
+               cursor: move;
+            }
+
+            p {
+               text-align: left;
+               margin: 1rem auto;
+               padding: 1rem;
+               background: #333;
+               min-height: 168px;
+            }
+         }
       }
+         
+   }
 
    `}>
-      <Swiper 
-         slidesPerView={1}
-         loop={true}
-         autoplay={{ delay: 5000 }}
-      >
+      <Slider {...settings}>
          {abouts.map(about => (
-            <SwiperSlide key={about.title}>
+            <div className="slide" key={about.title}>
                <h1>{about.title}</h1>
                <MDXRenderer>{about.body}</MDXRenderer>
-            </SwiperSlide>
+            </div>
          ))}
-      </Swiper>
+      </Slider>
    </div> 
 };
 

@@ -6,9 +6,10 @@ import { css } from '@emotion/core';
 const Projects = () => {
    const projects = useProjects();
    
-   return <div id="projects" className="main-section" css={css`
+   return <div id="projects" css={css`
+      margin: 1rem auto;
       text-align: center;
-      
+   
       #project-list {
          display: flex;
          flex-wrap: wrap;
