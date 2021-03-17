@@ -19,6 +19,10 @@ const About = () => {
       text-align: center;
       max-width: 650px;
       min-width: calc((100vw - 650px) / 2);
+
+      h1 {
+         background: #4062bb;
+      }
       
       .slick-track {
          display: flex !important;

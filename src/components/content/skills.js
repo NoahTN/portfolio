@@ -9,8 +9,13 @@ const Skills = () => {
 
    return <div id="skills" css={css`
       text-align: center;
-      display: inline-block;
-      margin: auto 4rem;
+      margin-right: 4rem;
+
+      h1 {
+         background: #f45b69;
+         max-width: calc(780px + 2rem);
+         margin: auto;
+      }
 
       #skills-body {
          display: flex;
@@ -29,7 +34,18 @@ const Skills = () => {
                background: #383838;
                height: 50px;
                padding: 0.25rem 1rem;
-               border-bottom: 1px solid #222;
+            }
+
+            #web-head {
+               border-bottom: 1px solid #21a685;
+            }
+
+            #gen-head {
+               border-bottom: 1px solid #f45b69;
+            }
+
+            #tool-head {
+               border-bottom: 1px solid #4062bb;
             }
 
             > div :last-child{
@@ -45,19 +61,19 @@ const Skills = () => {
       <h1>My Skills</h1>
       <div id="skills-body">
          <div className="column">
-            <h2>Web</h2>
+            <h2 id="web-head">Web</h2>
             <div className="break"></div>
-            <SkillList skills={webList}/>
+            <SkillList skills={webList} color=""/>
          </div>
          <div className="column">
-            <h2>General</h2>
+            <h2 id="gen-head">General</h2>
             <div className="break"></div>
-            <SkillList skills={generalList}/>
+            <SkillList skills={generalList} color="#f45b69"/>
          </div>
          <div className="column">
-            <h2>Tools</h2>
+            <h2 id="tool-head">Tools</h2>
             <div className="break"></div>
-            <SkillList skills={toolList}/>
+            <SkillList skills={toolList} color="#4062bb"/>
          </div>
       </div>
    </div>

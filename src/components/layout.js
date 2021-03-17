@@ -36,7 +36,8 @@ const Layout = ({ children }) => {
                   flex-wrap: wrap;
                   justify-content: center;
                   text-align: center;
-                  margin: 2rem 0; 
+                  width: 1700px;
+                  margin: 2rem auto; 
                   padding: 0.75rem;
                }   
             }

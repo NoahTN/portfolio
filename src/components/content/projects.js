@@ -9,6 +9,12 @@ const Projects = () => {
    return <div id="projects" css={css`
       margin: 1rem auto;
       text-align: center;
+
+      h1 {
+         background: #21a685;
+         width: calc(1200px + 4rem);
+         margin: auto;
+      }
    
       #project-list {
          display: flex;
