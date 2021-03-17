@@ -21,7 +21,8 @@ const About = () => {
       min-width: calc((100vw - 650px) / 2);
 
       h1 {
-         background: #4062bb;
+         border-bottom: 3px solid #4062bb;
+         line-height: 3.5rem;
       }
       
       .slick-track {

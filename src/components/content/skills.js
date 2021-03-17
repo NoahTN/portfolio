@@ -12,7 +12,8 @@ const Skills = () => {
       margin-right: 4rem;
 
       h1 {
-         background: #f45b69;
+         border-bottom: 3px solid #f45b69;
+         line-height: 3.5rem;
          max-width: calc(780px + 2rem);
          margin: auto;
       }

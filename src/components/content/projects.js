@@ -11,7 +11,8 @@ const Projects = () => {
       text-align: center;
 
       h1 {
-         background: #21a685;
+         border-bottom: 3px solid #21a685;
+         line-height: 3.5rem;
          width: calc(1200px + 4rem);
          margin: auto;
       }
