@@ -1,4 +1,4 @@
-import styles from '../styles/profile.module.scss'
+import styles from '/styles/profile.module.scss'
 // import useResume from '../../hooks/use-resume'
 
 export default function Profile() {
