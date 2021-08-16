@@ -4,16 +4,19 @@ import Head from 'next/head'
 import Profile from '/components/profile.js'
 import Skills from '/components/skills.js'
 import About from '/components/about.js'
+import Projects from '../components/projects.js'
 import { getSortedAboutsData } from '/lib/abouts'
-// import Projects from '../components/projects.js'
+import { getSortedProjectsData } from '/lib/projects'
 // import Contact from '../components/contact.js'
 
 export async function getStaticProps() {
   const aboutData = getSortedAboutsData()
+  const projectData = getSortedProjectsData()
   return {
     props: {
       data: {
         aboutData,
+        projectData
       }
     }
   }
@@ -33,7 +36,7 @@ export default function Home({ data }) {
         <Skills/>
         <About aboutData={data.aboutData}/>
       </div>
-      {/* <Projects/> */}
+      <Projects projectData={data.projectData}/>
 
    
         {/* <ScrollButton showBelow={250} /> */}

@@ -1,35 +1,37 @@
-import React from 'react';
-import ProjectBox from './formatting/project-box';
-import useProjects from '../../hooks/use-projects';
-import { css } from '@emotion/core';
+import styles from '/styles/project.module.scss'
+import SkillList from './skill-list.js'
+import Image from 'next/image'
 
-const Projects = () => {
-   const projects = useProjects();
-   
-   return <div id="projects" css={css`
-      margin: 1rem auto;
-      text-align: center;
+function ProjectBox({ project }) {
+   const { title, image, skills, link, content } = project;
 
-      h1 {
-         border-bottom: 3px solid #21a685;
-         line-height: 3.5rem;
-         width: calc(1200px + 4rem);
-         margin: auto;
-      }
-   
-      #project-list {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-      }
-   `}>
+   return <div className={styles.box}>
+      <a href={link}>
+         <h2>{title}</h2>
+      </a>
+      <div className={styles.body}>
+         {image && <a chref={link}>
+            <Image
+               priority
+               src={"/images/"+image}
+               alt={title}
+               layout='fill'
+               objectFit='contain'
+            />
+         </a>}
+         <p>{content}</p>
+      </div>
+      <SkillList skills={skills} type="web" context="p-list"/>
+   </div>
+}
+
+export default function Projects({ projectData }) {
+   return <div className={styles.wrap}>
       <h1>My Projects</h1>
-      <div id="project-list">
-         {projects.map(project => {
-            return <ProjectBox key={project.title} project={project} />
+      <div className={styles.list}>
+         {projectData.map(project => {
+            return <ProjectBox key={project.id} project={project} />
          })}
       </div>
    </div>
-};
-
-export default Projects;
+}

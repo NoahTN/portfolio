@@ -1,0 +1,60 @@
+.wrap {
+   margin: 1rem auto;
+   text-align: center;
+
+   h1 {
+      border-bottom: 3px solid #21a685;
+      line-height: 3.5rem;
+      width: calc(1200px + 4rem);
+      margin: auto;
+   }
+}
+
+.list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.box {
+   display: flex;
+   flex-direction: column;
+   background-color: #333;
+   max-width: 600px;
+   margin: 2rem 2rem;
+
+   a {
+      text-decoration: none;
+   }
+
+   h2 {
+      color: #21a685;
+      background: #383838;
+      padding: 0.5rem;
+      border-bottom: 1px solid #222;
+      margin-bottom: 0.5rem;
+   }
+}
+
+.body {
+   display: flex; 
+   align-items: center;
+   
+   a {
+      flex: 1;
+      width: 170px;
+      height: 170px;
+      position: relative;
+      margin: auto 1rem;
+   }
+
+   p {
+      flex: 2;
+      margin: auto 1rem;
+      text-align: left;
+   }
+}
+
+.image {
+   margin: auto 0rem auto 1rem;
+}

@@ -11,7 +11,7 @@ export default function About({ aboutData }) {
       arrows: false,
    }
 
-   return <div className={styles.about}>
+   return <div className={styles.wrap}>
       <Slider {...settings}>
          {aboutData.map(about => (
             <div className="slide" key={about.title}>
