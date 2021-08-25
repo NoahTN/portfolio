@@ -16,9 +16,7 @@ export default function About({ aboutData }) {
          {aboutData.map(about => (
             <div className="slide" key={about.title}>
                <h1>{about.title}</h1>
-               Test
-               {/* Need to render html content */}
-               {/* <div>{about.body}</div> */}
+               <p>{about.content}</p>
             </div>
          ))}
       </Slider>

@@ -17,15 +17,11 @@
 }
 
 .box {
-   display: flex;
-   flex-direction: column;
+   display: grid;
+   grid-template-columns: 1fr 3fr;
    background-color: #333;
-   max-width: 600px;
+   max-width: 650px;
    margin: 2rem 2rem;
-
-   a {
-      text-decoration: none;
-   }
 
    h2 {
       color: #21a685;
@@ -34,27 +30,24 @@
       border-bottom: 1px solid #222;
       margin-bottom: 0.5rem;
    }
-}
-
-.body {
-   display: flex; 
-   align-items: center;
-   
-   a {
-      flex: 1;
-      width: 170px;
-      height: 170px;
-      position: relative;
-      margin: auto 1rem;
-   }
 
    p {
-      flex: 2;
       margin: auto 1rem;
       text-align: left;
+      float: right;
    }
+}
+
+.header {
+   text-decoration: none;
+   grid-column: 1 / -1;
+   clear: both;
 }
 
 .image {
-   margin: auto 0rem auto 1rem;
+   width: 170px;
+   height: 170px;
+   position: relative;
+   margin: auto 1rem;
+   float: left;
 }

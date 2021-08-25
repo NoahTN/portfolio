@@ -3,25 +3,23 @@ import SkillList from './skill-list.js'
 import Image from 'next/image'
 
 function ProjectBox({ project }) {
-   const { title, image, skills, link, content } = project;
-
    return <div className={styles.box}>
-      <a href={link}>
-         <h2>{title}</h2>
+      <a className={styles.header} href={project.link}>
+         <h2>{project.title}</h2>
       </a>
-      <div className={styles.body}>
-         {image && <a chref={link}>
-            <Image
-               priority
-               src={"/images/"+image}
-               alt={title}
-               layout='fill'
-               objectFit='contain'
-            />
-         </a>}
-         <p>{content}</p>
-      </div>
-      <SkillList skills={skills} type="web" context="p-list"/>
+
+      {project.image ? <a className={styles.image} href={project.link}>
+         <Image
+            priority
+            src={"/images/"+project.image}
+            alt={project.title}
+            layout='fill'
+            objectFit='contain'
+         />
+      </a>: <div></div>}
+      <p>{project.content}</p>
+      
+      <SkillList skills={project.skills} type="web" context="p-list"/>
    </div>
 }
 

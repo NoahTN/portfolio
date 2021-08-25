@@ -1,13 +1,13 @@
 import Head from 'next/head'
-// import Image from 'next/image'
-// import styles from '../styles/Home.module.css'
+import Header from '/components/header.js'
 import Profile from '/components/profile.js'
 import Skills from '/components/skills.js'
 import About from '/components/about.js'
 import Projects from '../components/projects.js'
+import Contact from '/components/contact.js'
 import { getSortedAboutsData } from '/lib/abouts'
 import { getSortedProjectsData } from '/lib/projects'
-// import Contact from '../components/contact.js'
+
 
 export async function getStaticProps() {
   const aboutData = getSortedAboutsData()
@@ -31,20 +31,12 @@ export default function Home({ data }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header/>
       <Profile/>
-       <div id="skills-about">
-        <Skills/>
-        <About aboutData={data.aboutData}/>
-      </div>
+      {/* <About aboutData={data.aboutData}/> */}
+      <Skills/>
       <Projects projectData={data.projectData}/>
-
-   
-        {/* <ScrollButton showBelow={250} /> */}
-    
-     
-      {/* <footer className={styles.footer}>
-        <Contact/>
-      </footer> */}
+      <Contact/>
     </>
   )
 }

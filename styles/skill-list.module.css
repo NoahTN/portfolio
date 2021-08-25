@@ -16,6 +16,9 @@
    min-height: 75px;
    justify-content: center;
    align-content: center;
+   grid-column: 1 / -1;
+   /* needed for the floated layout */
+   clear: both;
 }
 
 .tag {
