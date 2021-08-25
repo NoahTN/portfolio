@@ -10,7 +10,7 @@ export default function Profile() {
       <div className={styles.resume}>
          <a href="mailto:ntolentino.nguyen@gmail.com">ntolentino.nguyen@gmail.com</a>
          <div className={styles.button}>
-            <a href="">
+            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1WNJecSqRFashnhBeDV6yoRbIDVZ4Pzy1b2SFEELXsEk/edit?usp=sharing">
                Resume
             </a>
          </div>
