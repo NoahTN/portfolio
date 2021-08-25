@@ -1,3 +1,9 @@
-module.exports = {
-  reactStrictMode: true,
-}
+const withOptimizedImages = require('next-optimized-images');
+
+module.exports = withOptimizedImages({
+  /* config for next-optimized-images */
+  images: {
+    disableStaticImages: true,
+  },
+  // your config for other plugins or the general next.js here...
+});

@@ -1,6 +1,5 @@
 import styles from '/styles/project.module.scss'
 import SkillList from './skill-list.js'
-import Image from 'next/image'
 
 function ProjectBox({ project }) {
    return <div className={styles.box}>
@@ -9,13 +8,14 @@ function ProjectBox({ project }) {
       </a>
 
       {project.image ? <a className={styles.image} href={project.link}>
-         <Image
+         {/* <Image
             priority
             src={"/images/"+project.image}
             alt={project.title}
             layout='fill'
             objectFit='contain'
-         />
+         /> */}
+         <img src={require('/public/images/'+project.image)} />
       </a>: <div></div>}
       <p>{project.content}</p>
       
