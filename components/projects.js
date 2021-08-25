@@ -15,7 +15,7 @@ function ProjectBox({ project }) {
             layout='fill'
             objectFit='contain'
          /> */}
-         <img src={require('/public/images/'+project.image)} />
+         <img src={require('/public/images/'+project.image)} alt={project.itle}/>
       </a>: <div></div>}
       <p>{project.content}</p>
       
